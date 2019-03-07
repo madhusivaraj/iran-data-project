@@ -1,0 +1,5 @@
+Code:
+
+convert fullpage.png -crop 166x60+287+472 cropped.png
+convert cropped.png -blur 0x01 cleaned.png
+tesseract cleaned.png stdout nobatch digits

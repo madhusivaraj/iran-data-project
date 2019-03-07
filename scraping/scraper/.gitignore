@@ -1,0 +1,11 @@
+scraper_secrets.py
+scraper_secrets.env
+.aws
+tmp
+articles
+crawler.log
+logs
+container-logs
+tor-data
+env
+local-storage

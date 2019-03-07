@@ -1,0 +1,16 @@
+{
+  "name": "captcha-storage",
+  "version": "1.0.0",
+  "description": "a simple storage solution for our captcha problem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "firebase": "^5.1.0"
+  }
+}

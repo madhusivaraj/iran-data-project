@@ -1,0 +1,504 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	روزنامه رسمی جمهوری اسلامی ایران
+</title><meta id="description" name="description" content="روزنامه رسمی جمهوری اسلامی ایران" /><meta id="keywords" name="keywords" content="روزنامه رسمی جمهوری اسلامی ایران" /><link id="lnkMainCSS" href="../Styles/Portal.css" rel="stylesheet" type="text/css" /><link id="Link2" href="../Styles/PersianDate.css" rel="stylesheet" type="text/css" /><script src="../JS/jquery.min.js" type="text/javascript"></script><script src="../JS/jquery.hoverIntent.minified.js" type="text/javascript"></script><script src="../JS/superfish.js" type="text/javascript"></script><script src="../JS/Main.js" type="text/javascript"></script><script src="../JS/farsi.js" type="text/javascript"></script><script src="../JS/PersianDate.js" type="text/javascript"></script><script src="../JS/jquery.cycle.all.js" type="text/javascript"></script><script src="../JS/jcarousellite_1.0.1.pack.js" type="text/javascript"></script><script src="../JS/thickbox-compressed.js" type="text/javascript"></script><script src="../JS/scripts.min.js" type="text/javascript"></script><script src="../JS/jquery.innerfade.js" type="text/javascript"></script><script src="../JS/Selection.js" type="text/javascript"></script></head>
+<body onload="updateClock(); setInterval('updateClock()', 1000 )">
+
+<script type="text/javascript">
+
+var currentYear = 2017;
+var currentMonth = 6;
+var currentDay = 6;
+
+var currentHours = 20;
+var currentMinutes = 02;
+var currentSeconds = 49;
+
+var InitDate = new Date(currentYear,currentMonth,currentDay,currentHours,currentMinutes, currentSeconds)
+
+        function updateClock() {
+            InitDate.setSeconds(InitDate.getSeconds() + 1);
+
+            var currentHours = InitDate.getHours ( );
+            var currentMinutes = InitDate.getMinutes ( );
+            var currentSeconds = InitDate.getSeconds();
+
+            // Pad the minutes and seconds with leading zeros, if required
+            currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+            currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+
+            // Choose either "AM" or "PM" as appropriate
+            var timeOfDay = ''; //( currentHours < 12 ) ? "AM" : "PM";
+
+            // Convert the hours component to 12-hour format if needed
+            //currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+
+            // Convert an hours component of "0" to "12"
+            currentHours = (currentHours == 0) ? 12 : currentHours;
+
+            // Compose the string for display
+            var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds; //  + " " + timeOfDay;
+
+            // Update the time display
+            document.getElementById("clock").innerHTML = currentTimeString;
+        }
+    
+    </script>
+
+    
+    <form name="form1" method="post" action="./ShowNews.aspx?Code=13455886" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg5MzUzMTA4NQ9kFgJmD2QWBGYPZBYCAgMPFgIeBGhyZWYFE34vU3R5bGVzL1BvcnRhbC5jc3NkAgIPZBYMAgcPDxYCHgRUZXh0BSnYs9mH4oCM2LTZhtio2YfYjNux27Yg2K7Ysdiv2KfYryDbsduz27nbtmRkAgsPDxYCHwEFCNiu2LHZiNisZGQCEQ8PFgIeB1Zpc2libGVoZBYCAgEPFgIeC18hSXRlbUNvdW50ZmQCEw9kFgJmDw8WAh8CZ2RkAhUPZBYCAgEPZBYGAgEPDxYEHghDc3NDbGFzcwUKY09rTWVzc2FnZR4EXyFTQgICFgIeBXN0eWxlBQ1kaXNwbGF5Om5vbmU7ZAIDD2QWAgIDD2QWBgIDDw8WCB4ISW1hZ2VVcmwFWX4vSHR0cEhhbmRsZXIvQ2FwdGNoYS5hc2h4P3c9MTg1Jmg9OTImYz1wcm85OGFRTnVtQW81Q1BWUktRSzB3PT0mYmM9ZmZmZmZmJnJuZD0xODcxNzA5NjYzHgVXaWR0aBsAAAAAAEBVQAEAAAAeBkhlaWdodBsAAAAAAAA+QAEAAAAfBQKAA2RkAgUPD2QWAh4MYXV0b2NvbXBsZXRlBQNvZmZkAgcPDxYEHwQFDGNJbmZvcm1hdGlvbh8FAgIWAh8GBQ1kaXNwbGF5Om5vbmU7ZAIFD2QWAmYPZBYCAicPZBYCAgMPZBYCAgEPZBYCAgsPZBYCAgEPEGRkFgBkAhcPZBYEAgEPZBYCAgEPZBYCAgEPFgIfAwIHFg5mD2QWAgIBDw8WAh4LTmF2aWdhdGVVcmwFDn4vRGVmYXVsdC5hc3B4ZBYCZg8VARHYtdmB2K3ZhyDYp9i12YTbjGQCAQ9kFgICAQ8PFgIfCwUGfi9MYXdzZBYCZg8VARzZgtmI2KfZhtuM2YYg2Ygg2YXZgtix2LHYp9iqZAICD2QWAgIBDw8WAh8LBRR+L05ld3MvTmV3c0xpc3QuYXNweGQWAmYPFQEc2KLar9mH24wg2YfYp9uMINmC2KfZhtmI2YbbjGQCAw9kFgICAQ8PFgIfCwUKfi9TZXJ2aWNlc2QWAmYPFQEf2K7Yr9mF2KfYqiDYp9mE2qnYqtix2YjZhtuM2qnbjGQCBA9kFgICAQ8PFgIfCwUXfi9TaG9wL1Byb2R1Y3RMaXN0LmFzcHhkFgJmDxUBENin2YbYqti02KfYsdin2KpkAgUPZBYCAgEPDxYCHwsFIH4vVXNlcnMvVXNlckxvZ2luLmFzcHg/U2hvd01zZz0xZBYCZg8VASHYp9i02KrYsdin2qkgINmG2LPYrtmHINqp2KfYutiw24xkAgYPZBYCAgEPDxYCHwsFKWh0dHA6Ly9yb296bmFtZWhyYXNtaS5pci9MYXdzLz9DYXRDb2RlPTMyZBYCZg8VATLYqNiu2LTZhtin2YXZhyDZh9in24wg2LHYptuM2LMg2YLZiNmHINmC2LbYp9im24zZh2QCAg9kFgICAQ8PFgIfBwUZfi9pbWFnZXMvU2l0ZS9idG5TaG9wLnBuZ2RkZHQxsFvYhPcpztASfYljrczhTA6UDohQ5nl2LrqEgtL4" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=qNXJ-Bhdjhufqugd3Qa-bVpGIoIMlktVHeKrWS7vsM6woizmjUH6fxJXGNvj8ip5Lr0OJfmPf3xojJpEEpSBvcAmFBmPztfyDQh67RbVVg41&amp;t=635803002500000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=3cfVB8QNkHA5pkbtIeJ-548DSkz0dUUB5D44wNXtOaTjmq9Fhw08QltlVGlx3TToOyFJMBUuL9pwxUvFHZgPN2dfb0yD3J5q9NZX-zA-R9KlBe4SGJfAYqzhZqCpR2HSziGU4vpfi1WAAfhJ8-XdT4ALYqXLYvrcc57b4SQ-c-E1&amp;t=ffffffffd1fec354" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Jahnqp4pPo5A__SHmB_hR0k0lF70UfAwM978WhxbJMLU3lM6WiA4YqgepWFhBY-5sOQ7mAy4lTSLk8ec9T_ue9vdLuUxGlPW9ZJJi-WGMr6svmDsWbq5Rl5Vi05BGDD37JkyQhhPHXcm-nQXV2HOEUQSkf-58mAQOaIQhXI6eM4AGctKbA8e6UbV3eEZgLVG0&amp;t=5f9d5645" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=GbSrpF5xxI9nWH0NA9E6kQpQUTORopiWX4WCwbeDX8oik9awYWhUMOTitVxpy7V7FD6aHDvtL84iJ0DnFPoVdIbDEqZYVKvZQ2_EbFAgkBKlqLQdz8b-22rOk4hGMqSl70iwOJkGYgmmDZDhH-2Xpz85rcUBvzOjZNbPy6_IEpRAF38O_jmuqH0CK6Xqkk3c0&amp;t=5f9d5645" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D9260202" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAPa9FpHLh976j4Z0S/lE//VjTz3Pa/mGK+vFudczMWkedIzJKbdPGjViqY4vtrVr+30cjE8wcS7cR21n8sYRyKOD8S/V+oeKOm6541Bsx7LMg==" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="wrap">
+        <div class="Header">
+            <div id="pnlFlashHeader">
+	
+                <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="996"
+                    height="140">
+                    <param name="movie" value="/images/Flash/header.swf" />
+                    <param name="quality" value="high" />
+                    <param name="wmode" value="opaque" />
+                    <param name="swfversion" value="9.0.45.0" />
+                    <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                    <param name="expressinstall" value="JS/expressInstall.swf" />
+                    <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                    <!--[if !IE]>-->
+                    <object type="application/x-shockwave-flash" data="/images/Flash/header.swf" width="996"
+                        height="140">
+                        <!--<![endif]-->
+                        <param name="quality" value="high" />
+                        <param name="wmode" value="opaque" />
+                        <param name="swfversion" value="9.0.45.0" />
+                        <param name="expressinstall" value="JS/expressInstall.swf" />
+                        <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                        <div>
+                            <h4>
+                                Content on this page requires a newer version of Adobe Flash Player.</h4>
+                            <p>
+                                <a href="http://www.adobe.com/go/getflashplayer">
+                                    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
+                                        alt="Get Adobe Flash player" /></a></p>
+                        </div>
+                        <!--[if !IE]>-->
+                    </object>
+                    <!--<![endif]-->
+                </object>
+            
+</div>
+            
+        </div>
+        <div class="Menu1">
+            <div class="Menu1LeftContent">
+                <span id="lblPersianDate">سه‌شنبه،۱۶ خرداد ۱۳۹۶</span>&nbsp;|
+                
+                <span id="clock">&nbsp;</span>
+                <span id="lblUserCaption"></span>
+            </div>
+            <div class="Menu1RightContent">
+               <table>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td style="padding-left:10px;">
+                            
+                        </td>
+                        <td>
+                            
+
+<div class="menu">
+    <ul class="sf-menu"><li><a href="/Default.aspx">صفحه اصلی</a></li><li><a href="javascript:void(0);">ورود اعضا</a><ul><li><a href="/Users/UserLogin.aspx">ورود کاربران عضو</a></li><li><a href="/Users/Register.aspx">ثبت نام</a></li><li><a href="http://automation.rrk.ir:7001/oa/lemon2/security/login.jsp;jsessionid=TgcQWSGHSWn9SJspR15rQST6wxCfrpnMzv7qprFzLTJQJG2w89XC!2108807615">اتوماسیون اداری کارکنان</a></li><li><a href="http://malisrv/web">پرتال کارکنان</a></li></ul></li><li><a href="javascript:void(0);">درباره ما</a><ul><li><a href="/ShowPage.aspx?PageCode=25">معرفی اجمالی</a></li><li><a href="/ShowPage.aspx?PageCode=26">تاریخچه</a></li><li><a href="/ShowPage.aspx?PageCode=27">وظایف و اختیارات</a></li><li><a href="javascript:void(0);">نمودار سازمانی</a><ul><li><a href="/ShowPage.aspx?PageCode=30">چارت سازمانی</a></li><li><a href="/ShowPage.aspx?PageCode=31">معرفی مسئولین</a></li></ul></li><li><a href="/ShowPage.aspx?PageCode=50">مقررات دستگاه</a></li></ul></li><li><a href="javascript:void(0);">ارتباط با ما</a><ul><li><a href="/SendMessage.aspx">پیشنهادات</a></li><li><a href="/ShowPage.aspx?PageCode=24">تماس با ما</a></li><li><a href="http://www.rooznamehrasmi.ir/ShowPage.aspx?PageCode=34">دریافت نظرات</a></li></ul></li><li><a href="javascript:void(0);">راهنما</a><ul><li><a href="/Files/DataFiles/subscription930716.pdf ">اشتراک نسخه کاغذی</a></li><li><a href="/Files/DataFiles/Help_Services.pdf ">خدمات الکترونیکی </a></li><li><a href="/Files/DataFiles/Help_Register2.pdf">ثبت نام</a></li><li><a href="javascript:void(0);">نمودار فرآیندها</a><ul><li><a href="/Files/DataFiles/فلوچارت زیرسیستم ثبت نام.pdf">ثبت نام</a></li><li><a href="/Files/DataFiles/فلوچارت زیرسیستم خدمات الکترونیکی و شارژ حساب.pdf ">خدمات الکترونیکی</a></li><li><a href="/Files/DataFiles/اشتراک-نمودار.pdf ">اشتراک نسخه کاغذی</a></li><li><a href="/Files/DataFiles/انتشار آگهی-نمودار.pdf ">آگهی های قانونی</a></li><li><a href="/Files/DataFiles/فروشگاه محصولات-نمودار.pdf">فروشگاه محصولات</a></li></ul></li><li><a href="/Files/DataFiles/ghanoon.pdf ">قوانین و مقررات</a></li><li><a href="javascript:void(0);">آگهی های قانونی</a><ul><li><a href="/Files/DataFiles/Help_SearchAgahi.pdf ">جستجوی آگهی </a></li><li><a href="/Files/DataFiles/Signedpdfhelp.pdf">دریافت فایل امضاء شده</a></li><li><a href="/Files/DataFiles/send-agahi.pdf ">نحوه ارسال الکترونیکی</a></li></ul></li><li><a href="/Files/DataFiles/Help_ElectronicShop.pdf">فروشگاه اینترنتی</a></li></ul></li></ul>
+
+</div>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clearfloat">
+            </div>
+        </div>
+        <div class="clearfloat">
+        </div>
+        <div class="BlueToolbar">
+            
+            <div id="NewsTickerSmall">
+	
+    <div id="NewsVertical">
+        <ul id="TickerVertical">
+            <div class="sampleClass">
+                &nbsp;<span id="sample"></span>
+            </div>
+            <script type="text/javascript"><!--
+                            var ps;
+                            var TelexSite = function () {
+                                ps = new newsbar("ps", "sample", 140, 3000);
+                                ps.setData([{ text: 'امام حسن (ع):هیچ بی نیازی ای بزرگتر از عقل و هیچ فقری مانند جهل و هیچ وحشتی سخت تر از خودپسندی وهیچ عیشی لذّت بخشتر از خوش اخلاقی نیست', link: 'JavaScript:void(0);', title: '', target:'_self' },{ text: 'ماه رمضان، ماه خداست و آن ماهی است که خداوند در آن حسنات را می‏افزاید و گناهان را پاک می‏کند و آن ماه برکت است.پیامبر  اکرم (ص)', link: 'JavaScript:void(0);', title: '', target:'_self' },{ text: 'امام حسن مجتبی (ع): بخشش پیش از درخواست، بزرگ‌ترین بزرگواری‌هاست.', link: 'JavaScript:void(0);', title: '', target:'_self' }]);
+                                ps.init();
+                            }
+                            $(document).ready(function () {
+                                TelexSite();
+                            });
+                    //--></script>
+        </ul>
+    </div>
+
+</div>
+
+
+<div class="clearfloat"></div>
+
+        </div>
+        <div class="clearfloat">
+        </div>
+        <div class="Page">
+            <div class="RightContentCol1Master">
+                <div id="pnlMiddle" class="LeftMainConentCol1Master">
+	
+                    
+    <div id="CurPage" class="page">
+        <div class="LeftBox">
+            <div class="Padder1">
+                <div class="MainLeftInner">
+                    <div class="Padder10">
+                        <div class="Marginer7">
+                            <div id="cphMain_msgBox" class="cOkMessage" style="display:none;">
+		
+                            <div>
+			<span></span>
+		</div>
+	</div>
+                        </div>
+                        <div id="cphMain_pnlCaptcha" class="CaptchaContainer">
+		
+                            <div>
+                                لطفا کدی که مشاهده میکنید را وارد کنید و دکمه ارسال را بزنید</div>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="submit" name="ctl00$cphMain$btnCaptcha" value="ارسال" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphMain$btnCaptcha&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cphMain_btnCaptcha" class="btnSearch" />
+                                    </td>
+                                    <td>
+                                        
+<div class="lblCMessage">
+    <table style="float:right;">
+        <tr>
+            <td>
+            
+            
+            <span id="cphMain_captcha_rfvCaptcha" style="color:Red;display:none;">کد امنیتی را وارد کنید</span>
+            </td>
+            <td><img id="imgCaptcha" src="../HttpHandler/Captcha.ashx?w=185&amp;h=92&amp;c=pro98aQNumAo5CPVRKQK0w==&amp;bc=ffffff&amp;rnd=1871709663" style="height:30px;width:85px;border-width:0px;" /></td>
+            <td style="text-align:right;"><input name="ctl00$cphMain$captcha$txtCaptcha" type="text" id="txtCaptcha" class="cInput" dir="ltr" autocomplete="off" style="width:60px;" /></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="cphMain_captcha_lblCMessage" class="cInformation" style="display:none;">
+			<div>
+				<span></span>
+			</div>
+		</div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        
+	</div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="RightBox">
+        </div>
+    </div>
+    <script type="text/javascript">
+        function disableSelection(target) {
+            if (typeof target.onselectstart != "undefined") //IE route
+                target.onselectstart = function () { return false }
+            else if (typeof target.style.MozUserSelect != "undefined") //Firefox route
+                target.style.MozUserSelect = "none"
+            else //All other route (ie: Opera)
+                target.onmousedown = function () { return false }
+            target.style.cursor = "default"
+        }
+
+        disableSelection(document.getElementById("CurPage"));
+    </script>
+
+                
+</div>
+                <div id="pnlRight" class="RightMainConentCol1Master">
+	
+                    <div class="clearfloat">
+                    </div>
+                
+
+<div class="MainRightMenu" style="">
+    
+    <div id="ctl02_pnlMenuPersian" class="bgMainMenu">
+		
+        
+            <div>
+            <a id="ctl02_rptRightMenus_hplMainPage_0" href="../Default.aspx">صفحه اصلی</a>
+        </div>
+            
+            <div>
+            <a id="ctl02_rptRightMenus_hplMainPage_1" href="../Laws">قوانین و مقررات</a>
+        </div>
+            
+            <div>
+            <a id="ctl02_rptRightMenus_hplMainPage_2" href="NewsList.aspx">آگهی های قانونی</a>
+        </div>
+            
+            <div>
+            <a id="ctl02_rptRightMenus_hplMainPage_3" href="../Services">خدمات الکترونیکی</a>
+        </div>
+            
+            <div>
+            <a id="ctl02_rptRightMenus_hplMainPage_4" href="../Shop/ProductList.aspx">انتشارات</a>
+        </div>
+            
+            <div>
+            <a id="ctl02_rptRightMenus_hplMainPage_5" href="../Users/UserLogin.aspx?ShowMsg=1">اشتراک  نسخه کاغذی</a>
+        </div>
+            
+            <div>
+            <a id="ctl02_rptRightMenus_hplMainPage_6" href="http://rooznamehrasmi.ir/Laws/?CatCode=32">بخشنامه های رئیس قوه قضائیه</a>
+        </div>
+            
+        
+    
+	</div>
+    
+    
+    
+    <a id="ctl02_hplBottomLink"></a>
+    <div class="clearfloat">
+    </div>
+</div>
+    <div class="clearfloat">
+    </div>
+
+
+
+<div class="Spacer1">
+</div>
+<div style="">
+    <div class="ShopLink">
+        <a id="ctl03_hplShop" href="../Shop/ProductList.aspx"><img src="../images/Site/btnShop.png" alt="" style="border-width:0px;" /></a>
+    </div>
+    <div class="ProGal" style="">
+        
+        <div class="ProGalTop">
+        </div>
+        <div class="ProGalMid">
+            <div class="slideshow">
+                
+                        <a href="../Shop/ShowProduct.aspx?Code=253" style="display:inline-block;height:190px;"><img src="../Files/Products/Large/%DA%A9%DB%8C%D9%81%D8%B1%DB%8C.jpg" alt="" style="border-width:0px;" /></a>
+                    
+                        <a href="../Shop/ShowProduct.aspx?Code=252" style="display:inline-block;height:190px;"><img src="../Files/Products/Large/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D8%B3%D8%A7%D8%B3%DB%8C.jpg" alt="" style="border-width:0px;" /></a>
+                    
+                        <a href="../Shop/ShowProduct.aspx?Code=250" style="display:inline-block;height:190px;"><img src="../Files/Products/Large/185-239.jpg" alt="" style="border-width:0px;" /></a>
+                    
+                        <a href="../Shop/ShowProduct.aspx?Code=248" style="display:inline-block;height:190px;"><img src="../Files/Products/Large/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D9%85%D8%AF%D9%86%DB%8C05.png" alt="" style="border-width:0px;" /></a>
+                    
+                        <a href="../Shop/ShowProduct.aspx?Code=232" style="display:inline-block;height:190px;"><img src="../Files/Products/Large/%D9%85%D8%AC%D9%85%D9%88%D8%B9%D9%87%20%D9%86%D8%B8%D8%B1%DB%8C%D9%87%20%D9%85%D8%B4%D9%88%D8%B1%D8%AA%DB%8C%20%D8%AC%D9%84%D8%AF%201%20%D9%85%D8%AF%D9%86%DB%8C.png" alt="" style="border-width:0px;" /></a>
+                    
+                        <a href="../Shop/ShowProduct.aspx?Code=202" style="display:inline-block;height:190px;"><img src="../Files/Products/Large/81.png" alt="" style="border-width:0px;" /></a>
+                    
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('.slideshow').cycle({
+                        fx: 'fade',
+                        sync: false,
+                        delay: -2000
+                        // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+                    });
+                });
+            </script>
+        </div>
+        <div class="ProGalBot">
+        </div>
+    </div>
+
+    <a id="ctl03_hplBottomLink"></a>
+</div>
+<div class="clearfloat">
+</div>
+
+
+</div>
+            </div>
+            <div class="clearfloat">
+            </div>
+        </div>
+        <div class="clearfloat">
+        </div>
+        <div class="Footer">
+            <div class="textCenter">
+                <ul class="mnuFooter">
+                    <li class="cmnuItem">
+                        <a id="HyperLink1" href="NewsList.aspx">آگهی های قانونی</a>
+                    </li>
+                    <li>|</li>
+                    <li class="cmnuItem">
+                        <a id="HyperLink2" href="../Shop/ProductList.aspx">فروشگاه محصولات</a>
+                    </li>
+                    <li>|</li>
+                    <li class="cmnuItem">
+                        <a id="HyperLink3" href="../Laws">قوانین و مقررات</a>
+                    </li>
+                    <li>|</li>
+                    <li class="cmnuItem">
+                        <a id="HyperLink4" href="../Users/UserLogin.aspx?ShowMsg=1">اشتراک محصولات</a>
+                    </li>
+                    <li>|</li>
+                    <li class="cmnuItem">
+                        <a id="HyperLink5" href="../Users/UserLogin.aspx">ورود کاربران</a>
+                    </li>
+                    <li>|</li>
+                    <li class="cmnuItem">
+                        <a id="HyperLink6" href="../Users/Register.aspx">ثبت نام</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfloat"></div>
+            <div>
+                تمامي حقوق اين پورتال براي روزنامه رسمی کشور محفوظ است.
+            </div>
+            <div>
+                آدرس: تهران ؛ ضلع جنوبي پارك شهر ؛ خيابان بهشت ؛ جنب شوراي اسلامي شهر تهران ‌| تلفن
+                گويا : 55602050
+            </div>
+        </div>
+        <br class="clearfloat" />
+    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("cphMain_captcha_rfvCaptcha"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var cphMain_captcha_rfvCaptcha = document.all ? document.all["cphMain_captcha_rfvCaptcha"] : document.getElementById("cphMain_captcha_rfvCaptcha");
+cphMain_captcha_rfvCaptcha.controltovalidate = "txtCaptcha";
+cphMain_captcha_rfvCaptcha.focusOnError = "t";
+cphMain_captcha_rfvCaptcha.errormessage = "کد امنیتی را وارد کنید";
+cphMain_captcha_rfvCaptcha.display = "Dynamic";
+cphMain_captcha_rfvCaptcha.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cphMain_captcha_rfvCaptcha.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('cphMain_captcha_rfvCaptcha').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cphMain_captcha_rfvCaptcha'));
+}
+//]]>
+</script>
+</form>
+
+<script>
+    $(document).ready(function () {
+        $("ul.sf-menu").superfish().find('ul');
+    }); 
+</script>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34510749-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+</body>
+</html>

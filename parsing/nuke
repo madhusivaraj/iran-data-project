@@ -1,0 +1,5 @@
+echo "{" > state.json
+echo "    \"parsing\": false," >> state.json
+echo "    \"completed\": []" >> state.json
+echo "}" >> state.json
+
